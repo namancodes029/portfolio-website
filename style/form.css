@@ -1,0 +1,92 @@
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
+  padding: 40px;
+  height: max-content;
+}
+/* first div inside contact [main] div containing images */
+.contact-svg {
+  width: 35%;
+  min-width: 300px;
+  > img {
+    height: 95%;
+    object-fit: cover;
+  }
+}
+
+/* second div containing form for contact */
+.form-div {
+  width: 40%;
+  min-width: 400px;
+  padding: 40px;
+  border-radius: 12px;
+  background-color: #e8b5c69f;
+}
+
+/* contact me heading */
+.form-div > h2 {
+  text-align: center;
+  font-size: 30px;
+  color: #161b33;
+  line-height: 40px;
+}
+
+/* designing form */
+.contact-me-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+.contact-me-form > div {
+  font-size: 20px;
+  width: 350px;
+  border: none;
+  padding: 10px 0px;
+  box-sizing: border-box;
+}
+.contact-me-form > div > input {
+        /* ::placeholder{
+            font-size: 15px;
+        } */
+  font-size: 15px;
+  display: block;
+  border: none;
+  width: 96%;
+  min-width: 300px;
+  height: 35px;
+  padding: 10px;
+  border-radius: 6px;
+  font-family: "Poppins", "Arial";
+}
+.contact-me-form > div > input::placeholder{
+    font-size: 13px;
+}  
+
+.contact-me-form > div > input:focus {
+  box-shadow: 2px 2px 13px white;
+  outline: none;
+}
+.contact-me-form > button {
+  height: 40px;
+  width: 35%;
+  min-width: 200px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(to right, rgb(170, 8, 199), rgb(25, 31, 147));
+  transition: all ease 0.5s;
+  align-self: center;
+}
+
+.contact-me-form > button:hover {
+  color: white;
+  box-shadow: 2px 2px 13px white;
+}
+

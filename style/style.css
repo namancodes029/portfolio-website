@@ -1,0 +1,141 @@
+/* All styling related to body and page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(/Media/Purple_Gradient_BG.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Poppins", "Arial";
+}
+
+/* styling main nav bar */
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(43, 39, 39, 0);
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: freeze;
+  height: 90px;
+  /* background-color: rgb(166, 150, 150); */
+  background-image: url(/Media/Purple_Gradient_BG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 1px solid black;
+  
+}
+
+/* styling logo on left side */
+.logo-container {
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.profile-logo {
+  height: 60px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: ease-in-out box-shadow .5s, scale .5s;
+}
+.profile-logo:hover {
+  box-shadow: 1px 1px 33px rgba(8, 13, 176, 0.8);
+  scale: 1.023;
+}
+
+/* styling right side navigation options */
+.ul-nav {
+  display: flex;
+  list-style: none;
+  color: white;
+}
+
+
+.ul-nav a{
+  text-decoration: none; /*decorating a tags {nav tags}*/
+  color: inherit;
+  font-size: 22px;
+}
+.list-items {
+  margin: 0 20px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 4px 4px;
+  transition: color  .5s;
+}
+
+.list-items:hover {
+  color: transparent;
+  background: linear-gradient(to right, rgb(170, 8, 199), rgb(25, 31, 147));
+  -webkit-background-clip: text;
+  }
+/*nav bar styling ends here */
+
+/* section - 1 styling starts here */
+.intro-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background-color: transparent;
+  padding: 10px 30px;
+}
+
+@media (max-width : 850px) {
+  .intro-div {
+    margin-top: 100px;
+  }
+}
+
+.intro-line {
+  width: 35%;
+  min-width: 450px;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #ed3a85;
+}
+.intro-line div {
+  font-size: 2rem;
+  color: #ed3a85;
+  font-weight: 200;
+}
+.intro-line span {
+  display: block;
+  width: max-content;
+  line-height: 75px;
+  border-bottom: 1px solid rgb(170, 8, 199);
+  color: transparent;
+  background: linear-gradient(to right, rgb(170, 8, 199), rgb(25, 31, 147));
+  font-weight: 600;
+  font-size: 4.5rem;
+  -webkit-background-clip: text;
+}
+
+.intro-img {
+  width: 35%;
+  min-width: 400px;
+}
+.intro-img img {
+  width: 80%;
+  /* margin: 40px 0; */
+}
+
+
+

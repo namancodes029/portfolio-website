@@ -1,0 +1,106 @@
+.skills-div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-width: none;
+    padding: 30px;  
+    /* height: 100vh; */
+}
+
+
+.skill-headline{
+    color: white;
+    font-weight: 500;
+    font-size: 50px;
+    color: transparent;
+    background: linear-gradient(to right, rgb(62, 87, 231), rgb(143, 25, 147));
+    -webkit-background-clip: text;
+}
+
+.skills-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    align-items:center;
+    justify-content: space-around;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 20px;
+}
+
+
+.skill-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(103, 79, 79, 0.423);
+    padding: 30px;
+    transition: scale .5s;
+}
+
+/* adding hover effect to skill cards  */
+
+.skill-card:hover {
+    scale: 1.023;
+}
+
+.skills-container > div > img{
+    width: 150px;
+    height: auto;
+}
+
+
+/* media query for screen size */
+@media (max-width :850px) {
+    .skill-headline{
+        text-align: center;
+        font-size: 40px;
+    }
+    .skills-container{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    row-gap: 40px;
+    column-gap : 30px;
+    align-items: center;
+        justify-content: center;
+}
+.skill-card{
+    width: 150px;
+    height: 150px;
+}
+.skills-container > div > img{
+    width: 100px;
+    height: 100px;
+}
+}
+@media (max-width :600px) {
+    .skill-headline{
+        text-align: center;
+        font-size: 30px;
+        
+    }
+    .skills-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    row-gap: 20px;
+    column-gap : 20px;
+    align-items: center;
+    justify-content: center;
+}
+.skill-card{
+    width: 110px;
+    height: 110px;
+}
+.skill-card > img{
+    width: 80px;
+    height: 80px;
+}
+}
+
+
+/* media query ends here */
+

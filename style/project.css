@@ -1,0 +1,121 @@
+#project{
+    /* height: 100vh;  */
+}
+/* giving project div flex and centering the items */
+.project-div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-width: none;
+    padding: 30px; 
+}
+
+
+/* project line */
+
+.project-heading{
+    font-size: 50px;
+    color: white;
+    color: transparent;
+    background: linear-gradient(to right, rgb(146, 78, 30), rgb(4, 11, 205));
+    -webkit-background-clip: text;
+}
+/* container - grid to display multiple project */
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: auto;
+    align-items:center;
+    justify-content: space-around;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 60px 20px;
+    color: white;
+}
+
+/* card height and width */
+.project-card{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(129, 129, 118, 0.715);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow .5s;
+}
+
+/* image div height and width */
+.project-card > :nth-child(1){
+    height: 55%;
+    width: 99%;
+}
+
+.project-card > :nth-child(2){
+    padding: 10px;
+}
+/* image height and width */
+.project-card > :nth-child(1) > img{
+    width: 100%;
+    height: 100%;
+    transition:scale .5s ;
+}
+
+
+/* hovering effects */
+
+.project-card:hover {
+    box-shadow:  1px 3px 22px grey;
+    :nth-child(1) > img{
+        scale: 1.01;
+    }
+
+}
+
+/* responisiveness */
+@media (max-width :1280px){
+    .project-container{
+    grid-template-columns: repeat(2 , 370px);
+    grid-template-rows: auto;
+    row-gap: 30px;
+    column-gap: 20px;
+    place-items: center;
+    margin: auto;
+    width: 100%;
+    }
+}
+
+@media (max-width :890px){
+    .project-container{
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: auto;
+    row-gap: 30px;
+    column-gap: 20px;
+    place-items: center;
+    margin: auto;
+    width: 100%;
+    }
+}
+
+@media (max-width :750px){
+    .project-container{
+    grid-template-columns: repeat(1, 350px);
+    grid-template-rows: auto;
+    row-gap: 30px;
+    column-gap: 10px;
+    place-items: center;
+    margin: auto;
+    width: 100%;
+    /* padding: 0 10px; */
+    }
+    .project-div{
+        align-items: center;
+        justify-content: center;
+        margin-left: 20px;
+    }
+    .project-card > :nth-child(2){
+        padding-bottom:40px;
+    }   
+}
+/* responisveness ends here */
