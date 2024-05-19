@@ -1,14 +1,13 @@
-#project{
-    /* height: 100vh;  */
-}
+
 /* giving project div flex and centering the items */
 .project-div{
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    min-width: none;
+    min-width: 500px;
     padding: 30px; 
 }
 

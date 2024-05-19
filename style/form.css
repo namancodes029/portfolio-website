@@ -5,6 +5,7 @@
   justify-content: space-around;
   margin-top: 40px;
   padding: 40px;
+  min-width: 500px;
   height: max-content;
 }
 /* first div inside contact [main] div containing images */
@@ -90,3 +91,14 @@
   box-shadow: 2px 2px 13px white;
 }
 
+
+
+@media (max-width: 600px) {
+  .contact{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: 60px;
+  }
+}
