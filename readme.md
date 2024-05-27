@@ -1,6 +1,6 @@
 <h1>Project Title</h1>
 
-<a href="https://namancodes029.github.io/portfolio-website/" > <h2 style= "color: royalblue">Portfolio website </h2></a>
+ <h2 style= "color: royalblue"><a href="https://namancodes029.github.io/portfolio-website/" >Portfolio website</a> </h2>
 
 <h1> About Me </h1>
 
